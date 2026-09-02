@@ -1,0 +1,8 @@
+{
+  "itemGroup.create_netherite_stuff_additions": "Create Netherite Stuff 'N Additions",
+  "item.create_netherite_stuff_additions.netherite_portable_drill": "§eНезеритовая портативная дрель",
+  "item_desc.holdshift": "§8Удерживайте [§7Shift§8] для сводки",
+  "item_desc.fuel": "§7Топливо:",
+  "item_desc.water": "§7Вода:",
+  "item_desc.portable_drill.desc": "§dРазрушает §dбольшинство известных блоков§5, но может быть зачарован только на §dКопание§5, что позволяет ему §разрушать области 3x3 блока§5. Расходует §dтопливо §5и §dводу§5. Перезаряжается из §dбаков §5или вручную предметом-топливом и ведром с водой (возьмите дрель во вторую руку и выбросите топливо/ведро в основной)."
+}

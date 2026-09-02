@@ -1,0 +1,8 @@
+{
+  "itemGroup.create_netherite_stuff_additions": "Create Netherite Stuff 'N Additions",
+  "item.create_netherite_stuff_additions.netherite_portable_drill": "§eNetherite Portable Drill",
+  "item_desc.holdshift": "§8Hold [§7Shift§8] for Summary",
+  "item_desc.fuel": "§7Fuel",
+  "item_desc.water": "§7Water:",
+  "item_desc.portable_drill.desc": "Can §ddestroy §dmost §dknown §dblocks §5but can only be enchanted with §dDigging, §5which allows §dmining §din §da §d3x3 §dblocks. §5It operates with §dfuel §5and §dwater. §5Recharges with coal and water (gadget in the offhand and drop the fuel)."
+}

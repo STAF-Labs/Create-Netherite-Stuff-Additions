@@ -1,0 +1,7 @@
+{
+  "parent": "create_netherite_stuff_additions:custom/netherite_portable_drill_handle",
+  "textures": {
+    "4": "create_netherite_stuff_additions:block/netherite_portable_drill_handle",
+    "particle": "create_netherite_stuff_additions:block/netherite_portable_drill_head"
+  }
+}
