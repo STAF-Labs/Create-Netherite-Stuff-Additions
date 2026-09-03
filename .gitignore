@@ -39,4 +39,9 @@ run/
 repo/
 !**/src/**/repo/
 
+### Agents Files
+AGENTS.md
+.agents/
+
+### Others
 stuff-template/
