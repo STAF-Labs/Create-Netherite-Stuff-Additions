@@ -7,8 +7,13 @@ modId="${mod_id}"
 
 version="${mod_version}"
 displayName="${mod_name}"
+logoFile="logo.png"
+
 description='''
-Example mod description.
+An addon for Create: Stuff 'N Additions that adds a Netherite Drill.
+
+The Netherite Drill is a stronger upgrade to the portable drill from Create: Stuff 'N Additions.
+It is designed to be comparable to Netherite-tier tools and can mine tougher blocks that the original drill cannot handle.
 '''
 
 [[dependencies.${mod_id}]]
