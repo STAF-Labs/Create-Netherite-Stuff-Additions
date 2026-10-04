@@ -6,6 +6,7 @@ import java.util.function.Consumer;
 import com.simibubi.create.foundation.item.render.SimpleCustomRenderer;
 
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.FluidTags;
@@ -41,6 +42,7 @@ import net.neoforged.neoforge.fluids.capability.IFluidHandler;
 import net.neoforged.neoforge.fluids.capability.IFluidHandlerItem;
 import net.neoforged.neoforge.items.ItemHandlerHelper;
 import ru.lotuze.createnetheritestuffadditions.client.NetheritePortableDrillItemRenderer;
+import net.mcreator.createstuffadditions.procedures.PortableDrillBlockDestroyedWithToolProcedure;
 
 public class NetheritePortableDrillItem extends TieredItem {
     public static final int ORIGINAL_DISPLAY_CAPACITY = 1600;
@@ -90,9 +92,23 @@ public class NetheritePortableDrillItem extends TieredItem {
     }
 
     @Override
-    public boolean mineBlock(ItemStack stack, Level level, BlockState state, net.minecraft.core.BlockPos pos, LivingEntity miningEntity) {
-        if (!level.isClientSide && state.getDestroySpeed(level, pos) != 0.0F) {
-            DualTankFluidHandler.drainFuelAndWater(stack, RESOURCE_PER_BLOCK);
+    public boolean mineBlock(
+            ItemStack stack,
+            Level level,
+            BlockState state,
+            BlockPos pos,
+            LivingEntity miningEntity
+    ) {
+        if (!level.isClientSide) {
+            PortableDrillBlockDestroyedWithToolProcedure.execute(
+                    level,
+                    pos.getX(),
+                    pos.getY(),
+                    pos.getZ(),
+                    state,
+                    miningEntity,
+                    stack
+            );
         }
 
         return true;

@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.create_sa.digging"
+  },
+  "supported_items": "#create_netherite_stuff_additions:portable_drills",
+  "weight": 5,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "any"
+  ],
+  "exclusive_set": []
+}

@@ -101,12 +101,15 @@ dependencies {
     implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") {
         transitive = false
     }
+
     implementation("net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}")
+
     compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
     localRuntime("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
+
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
 
-    localRuntime("curse.maven:create-stuff-additions-466792:${create_sa_file_id}")
+    implementation("curse.maven:create-stuff-additions-466792:${create_sa_file_id}")
 
     compileOnly("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
     compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
